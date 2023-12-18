@@ -1,0 +1,25 @@
+spring:
+ mail:
+  host: smtp.gmail.com
+  port: 587
+  username: coshqun23.62@gmail.com
+  password: ${GMAIL_PASSWORD}
+  properties:
+    mail:
+      smtp:
+        auth: true
+        starttls:
+          enable: true
+ datasource:
+    url: jdbc:postgresql://localhost:5432/task_manager
+    username: postgres
+    password: cosu2362
+ jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+ sql:
+    init:
+      mode: never
+
